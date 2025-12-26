@@ -8,7 +8,7 @@ headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0"}
 
 #分析前10页的所有岗位，浏览页面中信息显示不全，故选择进入每个岗位的具体网页
-# 因为不止1页url，根据DRY原则，故定义一个新函数getPositionInfo
+# 因为不止1页url，根据DRY原则，故定义一个新函数获取页面内的信息
 def getPositionInfo(detail_url):
     res = requests.get(detail_url, headers=headers)
     html = res.text
