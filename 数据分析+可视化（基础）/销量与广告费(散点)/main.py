@@ -11,7 +11,7 @@ plt.rcParams["font.sans-serif"] = "Microsoft YaHei"
 
 # 使用plt.scatter()函数
 # 以data["ads_fee"]为x轴的值和data["sales"]为y轴的值
-# 将颜色设置为绿色"green"，绘制散点图
+# 将颜色设置为绿色"green"，绘制多变量散点图与相关系数热力图
 plt.scatter(data["ads_fee"],data["sales"],color="green")
 
 # 使用plt.xlabel()函数，将x轴标题设置为"广告费用"

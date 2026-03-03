@@ -22,7 +22,7 @@ plt.xticks(rotation=90)
 # 选择序号为2子图
 plt.subplot(2,2,2)
 # 使用plt.scatter()函数
-# 以df["ads_fee"]为x轴的值和df["sales"]为y轴的值，绘制散点图
+# 以df["ads_fee"]为x轴的值和df["sales"]为y轴的值，绘制多变量散点图与相关系数热力图
 plt.scatter(df["ads_fee"],df["sales"])
 
 # 选择序号为3的子图
